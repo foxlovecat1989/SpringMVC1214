@@ -1,4 +1,4 @@
-package com.lab.jpa.controller.entities;
+package com.lab.jpa.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,15 +7,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "departments")
-public class Department {
+@Table(name = "salaries")
+public class Salary {
     
     @Id
     @GeneratedValue
     private Integer id;
     
     @Column
-    private String name;
+    private Integer money;
 
     public Integer getId() {
         return id;
@@ -25,13 +25,12 @@ public class Department {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public Integer getMoney() {
+        return money;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setMoney(Integer money) {
+        this.money = money;
     }
-    
     
 }

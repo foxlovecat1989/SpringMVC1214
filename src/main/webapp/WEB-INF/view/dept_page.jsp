@@ -46,7 +46,7 @@
                                     </thead>
 
                                     <tbody>
-                                        <c:forEach var="dept" items="${ dept.list }">
+                                        <c:forEach var="dept" items="${ dept_list }">
                                             <tr>
                                                 <td>${ dept.id   } </td>
                                                 <td>${ dept.name }</td>

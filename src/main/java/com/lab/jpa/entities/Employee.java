@@ -1,4 +1,4 @@
-package com.lab.jpa.controller.entities;
+package com.lab.jpa.entities;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

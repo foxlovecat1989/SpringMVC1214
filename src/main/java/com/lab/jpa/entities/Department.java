@@ -1,4 +1,4 @@
-package com.lab.jpa.controller.entities;
+package com.lab.jpa.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,8 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "clubs")
-public class Club {
+@Table(name = "departments")
+public class Department {
     
     @Id
     @GeneratedValue
