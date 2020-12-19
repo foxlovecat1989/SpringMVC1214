@@ -48,8 +48,8 @@
                                     <tbody>
                                         <c:forEach var="dept" items="${ dept_list }">
                                             <tr>
-                                                <td>${ dept.id }</td>
-                                                <td>${ dept.name }</td>
+                                                <th>${ dept.id }</th>
+                                                <th>${ dept.name }</th>
                                             </tr>
                                         </c:forEach>
                                     </tbody>

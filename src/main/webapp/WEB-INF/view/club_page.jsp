@@ -19,8 +19,8 @@
 
             <div id="main">
                 <div class="header">
-                    <h1>主標題</h1>
-                    <h2>副標題</h2>
+                    <h1>社團</h1>
+                    <h2></h2>
                 </div>
                 <table class="pure-table" style="border: none;">
                     <td valign="top">
@@ -40,17 +40,18 @@
                                 <table class="pure-table pure-table-bordered" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>部門</th>
-                                            <th></th>
+                                            <th>id</th>
+                                            <th>name</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
-                                        <tr>
-                                            <td>A</td>
-                                            <td>B</td>
-                                        </tr>
-
+                                        <c:forEach var="club" items="${ club_list }">
+                                            <tr>
+                                                <td>${ club.id }</td>
+                                                <td>${ club.name }</td>
+                                            </tr> 
+                                        </c:forEach>
                                     </tbody>
                                 </table> 
                             </fieldset>

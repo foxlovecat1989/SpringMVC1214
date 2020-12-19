@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class DeptController {
     
     @Autowired
-    private CompanyDao dao;
+    private CompanyDao companyDao;
     
     @RequestMapping("/")
     public String read(Model model){
-        List dept_list = dao.queryAllDepts();
+        List dept_list = companyDao.queryAllDepts();
         model.addAttribute("dept_list", dept_list);
         return "dept_page";
     }
