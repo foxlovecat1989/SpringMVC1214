@@ -36,12 +36,12 @@
                         <!-- 列表 -->
                         <form class="pure-form">
                             <fieldset>
-                                <legend>OOO list</legend>
+                                <legend>Dept list</legend>
                                 <table class="pure-table pure-table-bordered" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>欄位一</th>
-                                            <th>欄位二</th>
+                                            <th>部門</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
 
