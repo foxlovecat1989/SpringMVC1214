@@ -19,8 +19,8 @@
 
             <div id="main">
                 <div class="header">
-                    <h1>主標題</h1>
-                    <h2>副標題</h2>
+                    <h1>部門</h1>
+                    <h2></h2>
                 </div>
                 <table class="pure-table" style="border: none;">
                     <td valign="top">
@@ -40,17 +40,18 @@
                                 <table class="pure-table pure-table-bordered" width="100%">
                                     <thead>
                                         <tr>
-                                            <th>欄位一</th>
-                                            <th>欄位二</th>
+                                            <th>id</th>
+                                            <th>name</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
-                                        <tr>
-                                            <td>A</td>
-                                            <td>B</td>
-                                        </tr>
-
+                                        <c:forEach var="dept" items="${ dept_list }">
+                                            <tr>
+                                                <td>${ dept.id }</td>
+                                                <td>${ dept.name }</td>
+                                            </tr>
+                                        </c:forEach>
                                     </tbody>
                                 </table> 
                             </fieldset>
