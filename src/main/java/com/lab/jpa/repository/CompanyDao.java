@@ -24,16 +24,21 @@ public class CompanyDao {
     }
     
     // 查詢所有部門資料
-    public List queryAllDepts(){
+    public List queryForAllDepts(){
         List list = getSession().createQuery("from Department d").list();
         return list;
     }
     
     // 查詢所有社團資料
-    public List queryAllClubs(){
+    public List queryForAllClubs(){
         List list = getSession().createQuery("from Club c").list();
         return list;
     }
     
+    // 查詢所有員工資料
+    public List queryForAllEmps(){
+        List list = getSession().createQuery("from Employee e").list();
+        return list;
+    }
     
 }

@@ -16,7 +16,7 @@ public class ClubController {
     
     @RequestMapping("/")
     public String read(Model model){
-        List club_list =  companyDao.queryAllClubs();
+        List club_list =  companyDao.queryForAllClubs();
         model.addAttribute("club_list", club_list);
         return "club_page";
     }

@@ -16,7 +16,7 @@ public class DeptController {
     
     @RequestMapping("/")
     public String read(Model model){
-        List dept_list = companyDao.queryAllDepts();
+        List dept_list = companyDao.queryForAllDepts();
         model.addAttribute("dept_list", dept_list);
         return "dept_page";
     }
