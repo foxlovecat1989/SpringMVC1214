@@ -19,8 +19,8 @@
 
             <div id="main">
                 <div class="header">
-                    <h1>主標題</h1>
-                    <h2>副標題</h2>
+                    <h1>Employee</h1>
+                    <h2></h2>
                 </div>
                 <table class="pure-table" style="border: none;">
                     <td valign="top">
@@ -36,12 +36,15 @@
                         <!-- 列表 -->
                         <form class="pure-form">
                             <fieldset>
-                                <legend>OOO list</legend>
+                                <legend>Employee list</legend>
                                 <table class="pure-table pure-table-bordered" width="100%">
                                     <thead>
                                         <tr>
                                             <th>id</th>
-                                            <th>name</th>
+                                            <th>name</th>                                            
+                                            <th>dept.</th>
+                                            <th>Salary</th>
+                                            <th>Club</th>
                                         </tr>
                                     </thead>
 
@@ -49,7 +52,14 @@
                                         <c:forEach var="emp" items="${ emp_list }">
                                             <tr>
                                                 <th>${ emp.id }</th>
-                                                <th>${ emp.name }</th>
+                                                <th>${ emp.name }</th>                                                
+                                                <th>${ emp.department.name }</th>
+                                                <th>${ emp.salary.money }</th>
+                                                <th>
+                                                    <c:forEach var="club" items="${emp.clubs}">
+                                                        ${ club.name }
+                                                    </c:forEach>
+                                                </th>
                                             </tr>
                                         </c:forEach>
                                     </tbody>
