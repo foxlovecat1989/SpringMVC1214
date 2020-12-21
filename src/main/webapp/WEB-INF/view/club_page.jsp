@@ -42,6 +42,7 @@
                                         <tr>
                                             <th>id</th>
                                             <th>name</th>
+                                            <th>人數</th>
                                         </tr>
                                     </thead>
 
@@ -50,6 +51,7 @@
                                             <tr>
                                                 <td>${ club.id }</td>
                                                 <td>${ club.name }</td>
+                                                <td>${ fn:length(club.employees) }</td>
                                             </tr> 
                                         </c:forEach>
                                     </tbody>

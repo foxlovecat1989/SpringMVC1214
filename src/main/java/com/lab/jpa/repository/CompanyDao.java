@@ -16,7 +16,7 @@ public class CompanyDao {
     
     private Session getSession(){
         try {
-            Session session = sessionFactory.getCurrentSession();
+            session = sessionFactory.getCurrentSession();
         } catch (Exception e) {
             session = sessionFactory.openSession();
         }

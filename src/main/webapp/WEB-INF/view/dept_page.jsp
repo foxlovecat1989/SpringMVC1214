@@ -42,14 +42,22 @@
                                         <tr>
                                             <th>id</th>
                                             <th>name</th>
+                                            <th>人數</th>
+                                            <th>Employees</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <c:forEach var="dept" items="${ dept_list }">
                                             <tr>
-                                                <th>${ dept.id }</th>
-                                                <th>${ dept.name }</th>
+                                                <td>${ dept.id }</td>
+                                                <td>${ dept.name }</td>
+                                                <td>${ fn:length(dept.employees) }</td>
+                                                <td>
+                                                    <c:forEach var="employee" items="${ dept.employees }" >
+                                                        ${ employee.name }
+                                                    </c:forEach>
+                                                </td>
                                             </tr>
                                         </c:forEach>
                                     </tbody>
